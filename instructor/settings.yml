@@ -5,7 +5,7 @@ gh-pages: true
 gh-pages_branch: gh-pages
 instructors:
 - lucydot
-project_repo: lucydot/ChooChoo-template
+project_repo: choochoo-bot/ChooChoo-test-JOSE
 project_title: Choochoo template repository
 questions: true
 students:
@@ -13,4 +13,4 @@ students:
 - choochoo-bot
 - sofjgnsofjgnos
 votes_required: 3
-web_address: https://lucydot.github.io/ChooChoo-template
+web_address: https://choochoo-bot.github.io/ChooChoo-test-JOSE
