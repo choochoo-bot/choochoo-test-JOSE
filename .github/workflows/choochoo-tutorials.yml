@@ -34,21 +34,21 @@ jobs:
         key-path: '["gh-pages_branch"]'   
     - name: Install library and other requirements
       if: |
-        steps.read-yaml.outputs.data == 'true' ||
-        steps.read-yaml.outputs.data == 'True'
+        steps.read-yaml-gh-pages.outputs.data == 'true' ||
+        steps.read-yaml-gh-pages.outputs.data == 'True'
       run: |
         pip install jupyter nbconvert 
     - name: Convert notebook
       if: |
-        steps.read-yaml.outputs.data == 'true' ||
-        steps.read-yaml.outputs.data == 'True'
+        steps.read-yaml-gh-pages.outputs.data == 'true' ||
+        steps.read-yaml-gh-pages.outputs.data == 'True'
       run: |
          jupyter nbconvert --to html ./tutorials/*.ipynb  
          rm ./tutorials/*.ipynb 
     - name: Deploy 🚀
       if: |
-        steps.read-yaml.outputs.data == 'true' ||
-        steps.read-yaml.outputs.data == 'True'
+        steps.read-yaml-gh-pages.outputs.data == 'true' ||
+        steps.read-yaml-gh-pages.outputs.data == 'True'
       uses: JamesIves/github-pages-deploy-action@v4.2.5
       with:
         branch: steps.read-yaml-gh-pages-branch.outputs.data # The branch the action should deploy to.
