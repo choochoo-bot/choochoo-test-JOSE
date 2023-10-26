@@ -17,7 +17,7 @@ To list all possible choochoo commands type `choochoo list commands` in comment 
 
 ### Running Python |   [links](https://nu-cem.github.io/CompPhys/2021/08/02/01-Running_Python)  | 
 1) - [ ] open and save a Jupyter Notebook |    
-2) - [ ] use basic Markdown in a notebook |    
+2) - [ ] use basic Markdown in a notebook |   [links](https:alin.com)  | 
 
 
 ### Lists |   [links](https://nu-cem.github.io/CompPhys/2021/08/02/01-lists)  | 
